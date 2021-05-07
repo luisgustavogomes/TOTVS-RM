@@ -1,5 +1,8 @@
 USE CorporeRM
 GO 
+/**/
+
+
 
 
 DECLARE @CODCOLIGADA INT = 1
