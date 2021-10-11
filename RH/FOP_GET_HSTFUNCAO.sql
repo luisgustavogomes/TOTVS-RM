@@ -1,6 +1,6 @@
 USE [CORPORERM]
 GO
-/****** Object:  UserDefinedFunction [dbo].[TB_FOP_GET_HISTFUNCAO]    Script Date: 11/10/2021 15:34:27 ******/
+
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
