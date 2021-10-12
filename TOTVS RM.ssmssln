@@ -7,14 +7,17 @@ Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "CTB", "CTB\CTB.ssmssqlproj"
 EndProject
 Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "RH", "RH\RH.ssmssqlproj", "{AFFB7353-B0BE-47BE-BAAD-5891DE3D2301}"
 EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "UTL", "UTL\UTL.ssmssqlproj", "{592E051C-E379-4346-9B80-D707FF8D307F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Default|Default = Default|Default
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{C9BE9016-9461-473F-8EE6-427EDB48E25A}.Default|Default.ActiveCfg = Default
-		{6E8070FC-0FCE-49FC-B0B9-AED6625BBF35}.Default|Default.ActiveCfg = Default
 		{AFFB7353-B0BE-47BE-BAAD-5891DE3D2301}.Default|Default.ActiveCfg = Default
+		{E2A54CDA-C139-44B3-B2A9-3A1EBA680FA6}.Default|Default.ActiveCfg = Default
+		{592E051C-E379-4346-9B80-D707FF8D307F}.Default|Default.ActiveCfg = Default
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

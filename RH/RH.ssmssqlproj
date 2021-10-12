@@ -31,6 +31,18 @@
           <AssociatedConnUserName />
           <FullPath>FOP_GET_HSTSECAO.sql</FullPath>
         </FileNode>
+        <FileNode Name="VW_PFFINANC.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LUIS\LG:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>LUIS\LG</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>VW_PFFINANC.sql</FullPath>
+        </FileNode>
+        <FileNode Name="VW_PFPERFF.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LUIS\LG:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>LUIS\LG</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>VW_PFPERFF.sql</FullPath>
+        </FileNode>
       </Items>
     </LogicalFolder>
     <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
