@@ -31,6 +31,12 @@
           <AssociatedConnUserName />
           <FullPath>FOP_GET_HSTSECAO.sql</FullPath>
         </FileNode>
+        <FileNode Name="SP_FOP_GET_CONTRACHEQUE_CHAPA.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LUIS\LG:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>LUIS\LG</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SP_FOP_GET_CONTRACHEQUE_CHAPA.sql</FullPath>
+        </FileNode>
         <FileNode Name="VW_PFFINANC.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LUIS\LG:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>LUIS\LG</AssociatedConnSrvName>
