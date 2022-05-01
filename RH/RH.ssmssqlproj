@@ -3,49 +3,61 @@
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
       <Items>
-        <ConnectionNode Name="LUIS\LG:LUIS\lg">
-          <Created>2021-10-11T15:32:08.5715726-03:00</Created>
+        <ConnectionNode Name="luis:LUIS\lg">
+          <Created>2022-01-24T20:13:07.8465578-03:00</Created>
           <Type>SQL</Type>
-          <Server>LUIS\LG</Server>
+          <Server>luis</Server>
           <UserName />
           <Authentication>Windows Authentication</Authentication>
           <InitialDB />
           <LoginTimeout>30</LoginTimeout>
           <ExecutionTimeout>0</ExecutionTimeout>
           <ConnectionProtocol>NotSpecified</ConnectionProtocol>
-          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+          <ApplicationName />
         </ConnectionNode>
       </Items>
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
+        <FileNode Name="FOP_GET_HISTFUNCAO_ANOMES.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>FOP_GET_HISTFUNCAO_ANOMES.sql</FullPath>
+        </FileNode>
+        <FileNode Name="FOP_GET_HISTSECAO_ANOMES.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>FOP_GET_HISTSECAO_ANOMES.sql</FullPath>
+        </FileNode>
         <FileNode Name="FOP_GET_HSTFUNCAO.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LUIS\LG:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>LUIS\LG</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:luis:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>luis</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>FOP_GET_HSTFUNCAO.sql</FullPath>
         </FileNode>
         <FileNode Name="FOP_GET_HSTSECAO.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LUIS\LG:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>LUIS\LG</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>FOP_GET_HSTSECAO.sql</FullPath>
         </FileNode>
         <FileNode Name="SP_FOP_GET_CONTRACHEQUE_CHAPA.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LUIS\LG:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>LUIS\LG</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:luis:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>luis</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>SP_FOP_GET_CONTRACHEQUE_CHAPA.sql</FullPath>
         </FileNode>
         <FileNode Name="VW_PFFINANC.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LUIS\LG:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>LUIS\LG</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:luis:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>luis</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>VW_PFFINANC.sql</FullPath>
         </FileNode>
         <FileNode Name="VW_PFPERFF.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:LUIS\LG:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>LUIS\LG</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:luis:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>luis</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>VW_PFPERFF.sql</FullPath>
         </FileNode>
