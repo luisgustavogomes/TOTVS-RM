@@ -9,16 +9,23 @@ GO
 
 CREATE TABLE [dbo].[ZCONSTANTES]
 (
-	[TABELA] [nvarchar](250) NOT NULL,
-	[CAMPO] [nvarchar](250) NOT NULL,
+	[TABELA] [nvarchar](500) NOT NULL,
+	[CAMPO] [nvarchar](500) NOT NULL,
 	[CODSTATUS] [nvarchar](50) NOT NULL,
-	[STATUS] [nvarchar](250) NULL,
+	[STATUS] [nvarchar](500) NULL,
 	[OBSERVACAO] [nvarchar](1000) NULL,
+	[CODCOLIGADA] [smallint] NOT NULL,
+	[GDINAM_CODIGO] [nvarchar](100) NULL,
+	[GDINAM_APLICACAO] [nvarchar](10) NULL,
+	[TABELA_DINAM] [nvarchar](100) NULL,
+	[CAMPO_DINAM] [nvarchar](100) NULL,
+	[PODEALTERAR_DINAM] [bit] NULL,
 	CONSTRAINT [PKZCONSTANTES] PRIMARY KEY CLUSTERED 
 	(
-		 [TABELA] ASC
-		,[CAMPO] ASC
-		,[CODSTATUS] ASC
+		[TABELA] ASC,
+		[CAMPO] ASC,
+		[CODSTATUS] ASC,
+		[CODCOLIGADA] ASC
 	)
 	WITH 
 	(
@@ -33,5 +40,4 @@ CREATE TABLE [dbo].[ZCONSTANTES]
 	) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-
 
