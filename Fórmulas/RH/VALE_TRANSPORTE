@@ -1,0 +1,47 @@
+DECL vCONT, vLINHA, vVALORADICIONAL, vVALOR ;     
+
+
+SETVAR(vCONT, 1) ;    
+SETVAR(vVALOR, 0) ;
+SETVAR(vVALORADICIONAL,0) ;
+
+SE 
+    1=0/*TABCOMPL('CARTAOBHBUS','S') = '0' */
+ENTAO 
+    0
+SENAO
+
+    REPITA     
+        SETVAR 
+        (
+            vLINHA, 
+            LTRANS(vCONT) /* Retorna codigo da vLINHA de transporte utilizada pelo funcionario. LTRANS(VALOR) 
+                                Onde o valor e o nro de ordem de cadastramento da vLINHA para o funcionario. */
+        ) ;    
+        SETVAR 
+        (
+            vVALOR, 
+            vVALOR + 
+            NVD(vLINHA) * /* Retorna nro de viagens diarias, do registro cujo o periodo de uso esta dentro da competencia e periodo atual.
+                            NVD ('COD. DA vLINHA') */
+            NDUTPROX * /* Retorna o nro de dias Uteis no proximo mes conforme o que foi cadastrado em Administracao Pessoal| funcionario | Parametros no campo Dias Uteis do Mes*/
+            VLRVALE(vLINHA) /* Preco do vale transporte */
+        ) ;
+        SETVAR 
+        (
+            vVALORADICIONAL, 
+            vVALORADICIONAL + 
+            NVD(vLINHA) * /* Retorna nro de viagens diarias, do registro cujo o periodo de uso esta dentro da competencia e periodo atual.
+                            NVD ('COD. DA vLINHA') */
+            10 * /* FIXO */
+            VLRVALE(vLINHA)  /* Preco do vale transporte */
+        ) ; 
+        
+        SETVAR (vCONT, vCONT + 1)  ; /* INCREMENTO */
+    ATE vLINHA = '';
+
+	/*verificar saldo*/
+
+	vVALOR + vVALORADICIONAL 
+   
+FIMSE
