@@ -1,0 +1,13 @@
+
+/* Monta data INICIO - MES CORRENTE */
+MTDATA(1,MES,ANO)
+
+
+/* Monta data FIM - MES CORRENTE */
+MTDATA 
+        (
+            DIADT
+            (
+                ULTDIAMES(MTDATA(1,MES,ANO))
+            ),MES,ANO
+        )

@@ -1,0 +1,33 @@
+/* Esta funcao calculara o numero de dias que o funcionario deveria trabalhar considerando o seu horario, 
+   ferias e afastamentos, porem, ***CONSIDERANDO OS FERIADOS ocorridos dentro do periodo desejado de datas. */
+NDTRABPER 
+(
+    MTDATA /* Monta data INICIO - PROXIMO MES */
+    (
+        01,
+        INCMES(1,MES),
+        INCANO(MES,ANO,1)
+    )
+    ,MTDATA /* Monta data FINAL - PROXIMO MES */
+    (
+        DIADT(ULTDIAMES(MTDATA(1,INCMES(1,MES),INCANO(MES,ANO,1)))),
+        INCMES(1,MES),INCANO(MES,ANO,1)
+    )
+)
+
+/* Esta funcao calculara o numero de dias que o funcionario deveria trabalhar considerando o seu horario, 
+   ferias e afastamentos, porem, ***DESCONSIDERANDO OS FERIADOS ocorridos dentro do periodo desejado de datas. */
+NDTRABPER2 
+(
+    MTDATA /* Monta data INICIO - PROXIMO MES */
+    (
+        01,
+        INCMES(1,MES),
+        INCANO(MES,ANO,1)
+    )
+    ,MTDATA /* Monta data FINAL - PROXIMO MES */
+    (
+        DIADT(ULTDIAMES(MTDATA(1,INCMES(1,MES),INCANO(MES,ANO,1)))),
+        INCMES(1,MES),INCANO(MES,ANO,1)
+    )
+)
